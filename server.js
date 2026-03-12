@@ -11,7 +11,7 @@ app.use((req, res, next) => {
 
 app.get("/weather", (req, res) => {
     const city = req.query.city;
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=c3baed5c02c37e4fd7682e6b2d5e8008`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.WEATHER_API_KEY}`;
 
     axios
     .get(url)
