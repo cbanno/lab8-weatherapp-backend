@@ -28,7 +28,7 @@ app.get("/weather", (req, res) => {
     });
 });
 
-const PORT = 3000;
+const PORT = 5501;
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
